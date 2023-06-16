@@ -1,0 +1,21 @@
+.support {
+  padding: 90px 0 115px;
+  background-color: $sectionbg;
+
+  &__title {
+    margin-bottom: 63px;
+  }
+
+  &__text {
+    margin-bottom: 100px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+
+    &-item:not(:first-child) {
+      margin-left: 32px;
+    }
+  }
+}

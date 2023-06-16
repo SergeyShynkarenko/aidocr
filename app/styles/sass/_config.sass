@@ -1,0 +1,105 @@
+// USER VARIABLES SECTION
+
+$accent: #4E7CBF // Accent Color
+$fontsize: 30px // Body Font Size
+$fontweight: 300 // Document Font Weight
+$textcolor: #000 // Text Color
+$whitecolor: #FFF // White Color
+$titlecolor: #122E52 // Title Color
+$sectionbg: #E4EFFF // Section Background
+$lineheight: 1.66 // Document Line Height
+$transition: all 0.3s ease // Document Transition
+$userfont: Comfortaa, sans-serif // User Font Family
+$systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
+
+// Bootstrap compatible gutter variable => $gutter
+$grid-gutter-width: 30px
+$gutter: $grid-gutter-width
+
+// IMPORT SECTION
+
+@import 'node_modules/bootstrap/scss/bootstrap-reboot.scss' // Bootstrap Reboot collection
+@import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss' // Bootstrap Breakpoints mixin
+// @import 'node_modules/bootstrap/scss/bootstrap-grid.scss' // Optional Bootstrap Grid
+// @import 'node_modules/bootstrap/scss/utilities/_sizing.scss' // Optional Bootstrap Utilites
+
+// FONTS LOAD SECTION
+
+@mixin font($fname, $fstyle, $fweight, $furl)
+	@font-face
+		font-family: $fname
+		font-style: $fstyle
+		font-weight: $fweight
+		src: url($furl) format('woff2')
+
+@include font('Comfortaa', normal, 300, '../fonts/Comfortaa-Light.woff2')
+@include font('Comfortaa', normal, 500, '../fonts/Сomfortaa-Medium.woff2')
+@include font('Comfortaa', normal, 600, '../fonts/Comfortaa-SemiBold.woff2')
+@include font('Comfortaa', normal, 700, '../fonts/Comfortaa-Bold.woff2')
+@include font('Poppins', normal, 400, '../fonts/Poppins-Regular.woff2')
+@include font('Poppins', normal, 600, '../fonts/Poppins-SemiBold.woff2')
+
+// GENERAL DOCUMENT STYLES
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+
+ul
+	list-style: none
+	margin: 0
+	padding: 0
+
+a
+	transition: $transition
+	&:hover
+		text-decoration: none
+	
+img
+	max-width: 100%
+
+p
+	margin: 0
+
+body
+	font-family: $userfont
+	font-size: $fontsize
+	line-height: $lineheight
+	font-weight: $fontweight
+	color: $textcolor
+	min-width: 320px
+	position: relative
+	overflow-x: hidden
+
+.container
+	max-width: 1790px
+	width: 100%
+	// height: 100%
+	margin: 0 auto
+	padding: 0 15px
+
+.title 
+	font-family: Poppins, sans-serif
+	font-size: clamp(25px, 7vw, 55px);
+	margin-bottom: 51px
+	// font-size: 55px
+	line-height: 1.5
+	font-weight: 600
+	text-align: center
+
+.text
+	font-size: clamp(16px, 3vw, 30px);
+
+	@media (max-width: 1200px)
+		text-align: center
+

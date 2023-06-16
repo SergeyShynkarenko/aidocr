@@ -1,0 +1,29 @@
+.solution {
+  margin: 105px 0 200px;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__content {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+
+    &-item {
+      width: 40.5%;
+    }
+  }
+  .item--title {
+    font-size: 35px;
+    line-height: 1.43;
+    font-weight: 500;
+    margin-bottom: 14px;
+  }
+
+  &__img {
+    max-width: 450px;
+    width: 100%;
+  }
+}
