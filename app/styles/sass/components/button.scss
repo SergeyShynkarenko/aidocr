@@ -1,28 +1,24 @@
 .button {
   display: inline-block;
-  // font-size: 24px;
-  font-size: clamp(14px, 5vw, 24px);
+  font-size: 24px;
   line-height: 1.11;
   font-weight: 600;
   color: $whitecolor;
   background-color: $accent;
-  padding: 14px 37px;
+  padding: 10px 35px;
   text-align: center;
   border-radius: 8px;
   border: 1px solid $accent;
   transition: $transition;
 
-  @media (max-width: 1600px) {
-    padding: 14px 30px;
-  }
-
   @media (max-width: 1440px) {
-    font-size: clamp(14px, 5vw, 19px);
+    font-size: 18px;
+    padding: 10px 25px;
   }
 
-  @media (max-width: 1200px) {
-    font-size: clamp(14px, 5vw, 16px);
-    padding: 14px 25px;
+  @media (max-width: 1024px) {
+    font-size: 14px;
+    padding: 10px 14px;
   }
 
   &:hover {

@@ -22,12 +22,18 @@
 </head>
 
 <body>
-	<header class="header">
 
+	<div class="preloader" id="preloader">
+		<div class="preloader__content"></div>
+	</div>
+
+	<header class="header section-menu" id="header">
 
 		<div class="header__top">
 			<div class="container">
+
 				<div class="header__top-wrapper">
+
 					<button class="header__top-hamburger hamburger--slider" arial-label="Btn menu" type="button">
 						<span></span>
 						<span></span>
@@ -35,31 +41,31 @@
 					</button>
 
 					<a class="header__top-logo" href="#">
-						<img class="logo__img" src="../images/dist/logo-black.png" alt="Aidocr">
+						<img class="logo__img" src="images/dist/logo-header.svg" alt="Aidocr">
 					</a>
 
 					<nav class="header__top-nav">
 						<ul class="nav__list">
 							<li class="nav__list-item">
-								<a class="nav__list-link" href="#">Home</a>
+								<a class="nav__list-link active" href="#header">Home</a>
 							</li>
 							<li class="nav__list-item">
-								<a class="nav__list-link" href="#">Mission</a>
+								<a class="nav__list-link" href="#mission">Mission</a>
 							</li>
 							<li class="nav__list-item">
-								<a class="nav__list-link" href="#">Features</a>
+								<a class="nav__list-link" href="#solution">Features</a>
 							</li>
 							<li class="nav__list-item">
-								<a class="nav__list-link" href="#">Meeting</a>
+								<a class="nav__list-link" href="#book">Meeting</a>
 							</li>
 							<li class="nav__list-item">
-								<a class="nav__list-link" href="#">FAQ</a>
+								<a class="nav__list-link" href="#questions">FAQ</a>
 							</li>
 							<li class="nav__list-item">
-								<a class="nav__list-link" href="#">Pricing</a>
+								<a class="nav__list-link" href="#pricing">Pricing</a>
 							</li>
 							<li class="nav__list-item">
-								<a class="nav__list-link" href="#">Contact</a>
+								<a class="nav__list-link" href="#contact">Contact</a>
 							</li>
 						</ul>
 					</nav>
@@ -72,8 +78,8 @@
 				<div class="header__content-wrapper">
 
 					<div class="header__content-info">
-						<h1 class="info__title">Welcome to your enterprise knowledge assistant</h1>
-						<p class="info__text">Search and talk to your company data and uncover insights within seconds.</p>
+						<h1 class="info__title title">Welcome to your enterprise knowledge assistant</h1>
+						<p class="info__text text">Search and talk to your company data and uncover insights within seconds.</p>
 
 						<div class="info__buttons">
 							<a class="info__buttons-item button" href="#">Try our free sandbox</a>
@@ -82,7 +88,7 @@
 					</div>
 
 					<div class="header__content-img">
-						<img src="images/dist/header.png" alt="Enterprise knowledge">
+						<img src="images/dist/header.png" alt="Welcome to your enterprise">
 					</div>
 				</div>
 			</div>

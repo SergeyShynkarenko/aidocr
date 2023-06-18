@@ -1,6 +1,69 @@
 .book {
-  padding: 60px;
+  padding: 60px 0;
+  background-color: $accent;
+
+  @media (max-width: 768px) {
+    padding: 50px 0;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__img {
+    @media (max-width: 1440px) {
+      width: 40%;
+    }
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
   &__content {
-    margin-left: 37px;
+    color: $whitecolor;
+
+    @media (max-width: 768px) {
+      text-align: center;
+    }
+
+    &-title {
+      margin: 0;
+      text-align: left;
+
+      @media (max-width: 768px) {
+        text-align: center;
+      }
+    }
+
+    &-text {
+      margin: 95px 0;
+
+      @media (max-width: 1440px) {
+        margin: 70px 0;
+      }
+
+      @media (max-width: 990px) {
+        margin: 50px 0;
+      }
+    }
+
+    &-btn {
+      color: $textcolor;
+      background-color: $whitecolor;
+      padding: 10px 100px;
+
+      @media (max-width: 480px) {
+        width: 100%;
+        padding: 10px;
+      }
+
+      &:hover {
+        color: $textcolor;
+        border: 1px solid $textcolor;
+      }
+    }
   }
 }

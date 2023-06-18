@@ -1,0 +1,230 @@
+.contact {
+  padding: 135px 0 215px;
+  background-color: $sectionbg;
+
+  @media (max-width: 1440px) {
+    padding: 140px 0;
+  }
+
+  @media (max-width: 1200px) {
+    padding: 100px 0;
+  }
+
+  @media (max-width: 768px) {
+    padding: 50px 0;
+  }
+
+  .contact__text {
+    margin-bottom: 120px;
+    text-align: center;
+
+    p:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 1200px) {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+
+    @media (max-width: 1200px) {
+      justify-content: space-between;
+    }
+
+    @media (max-width: 990px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 743px;
+
+    @media (max-width: 990px) {
+      margin-bottom: 70px;
+    }
+  }
+
+  &__card {
+    width: 50%;
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: $whitecolor;
+    cursor: pointer;
+    transition: $transition;
+    border: 1px solid transparent;
+
+    &:hover {
+      transform: scale(1.05);
+      border: 1px solid $textcolor;
+    }
+
+    @media (max-width: 480px) {
+      width: 100%;
+    }
+
+    &-img {
+      @media (max-width: 1440px) {
+        width: 45px;
+      }
+
+      @media (max-width: 1200px) {
+        width: 40px;
+      }
+    }
+
+    &-name {
+      font-weight: 700;
+      margin: 24px 0;
+
+      @media (max-width: 1440px) {
+        font-size: 19px;
+        margin: 20px 0;
+      }
+
+      @media (max-width: 1200px) {
+        font-size: 17px;
+        margin: 15px 0;
+      }
+    }
+
+    .list__item {
+      margin-bottom: 15px;
+      font-size: 24px;
+      line-height: 1.21;
+
+      &:not(:last-child) {
+        margin-bottom: 15px;
+
+        @media (max-width: 1440px) {
+          margin-bottom: 10px;
+        }
+      }
+
+      @media (max-width: 1440px) {
+        font-size: 17px;
+      }
+
+      @media (max-width: 1200px) {
+        font-size: 15px;
+      }
+
+      &-link {
+        color: $textcolor;
+      }
+    }
+
+    &-top,
+    &-bottom {
+      display: flex;
+      justify-content: space-between;
+      gap: 17px;
+      max-width: 743px;
+      width: 100%;
+
+      @media (max-width: 480px) {
+        flex-direction: column;
+      }
+    }
+
+    &-top {
+      margin-bottom: 17px;
+    }
+  }
+
+  &__form {
+    max-width: 743px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+    font-size: 24px;
+    line-height: 1.21;
+    font-weight: 300;
+
+    @media (max-width: 1440px) {
+      font-size: 17px;
+      margin-left: 40px;
+    }
+
+    @media (max-width: 1200px) {
+      margin-left: 30px;
+      font-size: 15px;
+    }
+
+    @media (max-width: 990px) {
+      margin-left: 0;
+    }
+
+    &-input,
+    &-textarea {
+      border: none;
+      padding: 32px 36px;
+      border: 1px solid transparent;
+      transition: $transition;
+      font-weight: 300;
+
+      &::placeholder {
+        color: $textcolor;
+      }
+
+      &:hover,
+      &:active {
+        border: 1px solid $textcolor;
+      }
+    }
+
+    &-input {
+      margin-bottom: 40px;
+
+      @media (max-width: 1440px) {
+        padding: 15px 25px;
+        margin-bottom: 25px;
+      }
+    }
+
+    &-textarea {
+      margin-bottom: 55px;
+      resize: none;
+      height: 238px;
+
+      @media (max-width: 1440px) {
+        padding: 15px 25px;
+        margin-bottom: 35px;
+      }
+
+      @media (max-width: 1200px) {
+        height: 200px;
+      }
+
+      @media (max-width: 480px) {
+        height: 150px;
+      }
+    }
+
+    &-btn {
+      width: 395px;
+      margin: 0 auto;
+
+      @media (max-width: 1440px) {
+        font-size: 17px;
+      }
+
+      @media (max-width: 1200px) {
+        font-size: 15px;
+      }
+
+      @media (max-width: 480px) {
+        width: 100%;
+      }
+    }
+  }
+}
